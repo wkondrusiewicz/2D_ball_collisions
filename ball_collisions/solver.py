@@ -6,10 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 
-from atom import Atom
-from vec2d import Vec2D, point_on_segment_projection
-from polygon import Polygon
-from system import System
+from ball_collisions.atom import Atom
+from ball_collisions.vec2d import Vec2D, point_on_segment_projection
+from ball_collisions.polygon import Polygon
+from ball_collisions.system import System
 
 
 def get_new_velocity_after_wall_collision(atom, n_vec):
@@ -94,5 +94,5 @@ class Solver:
             self.draw_system(iteration = i)
             self.single_run()
 
-#first copy `plots` directory to main (SSD) storage 
+#first copy `plots` directory to main (SSD) storage
 # ffmpeg -framerate 60 -i img%06d.png output.mp4

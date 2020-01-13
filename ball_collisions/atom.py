@@ -1,4 +1,4 @@
-from vec2d import Vec2D
+from ball_collisions.vec2d import Vec2D
 
 
 class Atom(Vec2D):
